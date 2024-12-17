@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traveling Project</title>
+  <link rel="icon" type="image/x-icon" href="./asset/img/icon/airplane.png">
+  <link href="./css/output.css" rel="stylesheet">
+  <link href="./css/index.css" rel="stylesheet">
+  <link href="./css/common.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     <div class="wrapper max-w-screen">
+        <!-- header -->
+        <header
+        data-aos="fade-down"
+         class="header-fixed px-[52px] py-[10px] bg-black bg-opacity-20 fixed top-0 right-0 left-0 z-[100]">
+            <div class="flex items-center justify-between relative">
+                <div class="logo">
+                    <img src="./asset/img/logo/logo.png" alt="logo-img" class="logo-image" loading="lazy">
+                </div>
+                <nav class="text-white text-base uppercase font-medium">
+                    <ul class="menu flex gap-[34px]">
+                        <li class="menu-items"><a href="./index.html">Home</a></li>
+                        <li class="menu-items"><a href="./pakage.html">Package</a></li>
+                        <li class="menu-items"><a href="./contact.html">Destination</a></li>
+                        <li class="menu-items"><a href="./singleBlog.html">Blog</a></li> 
+                        <li class="menu-items"><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="action text-white text-lg flex gap-[30px]">
+                    <span class="search-icon cursor-pointer">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    <span class="noti-icon cursor-pointer">
+                        <i class="fa-solid fa-bell"></i>
+                    </span>
+                </div>
+
+                <div class="search-area absolute top-[100%] left-[70%] w-[400px]  py-[50px] px-[20px] bg-white rounded-lg border-[1px] border-[#ccc] z-[2] hidden">
+                    <input type="text" placeholder="Search Destination" class="search-input py-[10px] pl-[13px] w-[100%] relative rounded-full border-[1px] border-[#eee]">
+                    <button class="search-btn absolute top-[40%] right-[10%] text-lg">
+                        <i class="fa-brands fa-searchengin"></i>
+                    </button>
+                </div>
+
+                <div class="noti-area absolute top-[100%] left-[85%] w-[250px] h-auto bg-white border-[1px] border-[#eee] z-[2] rounded-md hidden ">
+                    <ul class="w-full flex flex-col text-center">
+                        <li class="py-[15px] border-b-[1px] flex px-[10px] gap-[13px]">
+                            <img src="./asset/img/icon/hacker.png" alt="" class="">
+                            <span>Lorem ipsum dolor sit</span>
+                        </li>
+                        <li class="py-[15px] border-b-[1px] flex px-[10px] gap-[13px]">
+                            <img src="./asset/img/icon/man.png" alt="" class="">
+                            <span>Lorem ipsum dolor sit</span></li>
+                        <li class="py-[15px] border-b-[1px] flex px-[10px] gap-[13px]">
+                            <img src="./asset/img/icon/woman.png" alt="" class="">
+                            <span>Lorem ipsum dolor sit</span></li>
+                        <li class="py-[15px] border-b-[1px] flex px-[10px] gap-[13px]">
+                            <img src="./asset/img/icon/user.png" alt="" class="">
+                            <span>Lorem ipsum dolor sit</span></li>
+                    </ul>
+                </div>
+    
+                <div class="toggle hidden text-lg ">
+                    <i class="fa-solid fa-list"></i>
+                </div>
+            </div>
+        </header>
+        <!-- section hero -->
+        <section class="hero w-screen min-h-[100vh]">
+            <div class="absolute top-0 bottom-0 left-0 right-0 bg-black bg-opacity-20 z-[1]">
+                <div 
+                data-aos="fade-right"
+                data-aos-duration="2000"
+                class="title max-w-[736px] mt-[150px] ml-[100px]">
+                    <h2 class="title text-white text-[70px] font-bold mb-[23px]">Make in your journey.</h2>
+                    <p class="dec text-lg text-white opacity-85">Explore the world with what you love beautiful natural beauty Lorem ipsum dolor sit amet consectetur adipisicing elit. Error temporibus consectetur magnam, facere quis natus dolorum expedita sapiente perferendis ...</p>
+                    <div class="action mt-[50px] p-[10px] bg-white rounded-full flex items-center justify-between">
+                        <div class="text-[#9B9B9B] pl-[13px] ">
+                            <a href="">Location</a>
+                            <span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </span>
+                        </div>
+                        <div class="text-[#9B9B9B] pl-[13px] ">
+                            <a href="">Date</a>
+                            <span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </span>
+                        </div>
+                        <div class="text-[#9B9B9B] pl-[13px] ">
+                            <a href="">People</a>
+                            <span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </span>
+                        </div>
+                        <a href="" class="text-white font-medium cursor-pointer py-[11px] px-[25px] bg-black rounded-full">
+                            Explore now
+                        </a>
+                    </div>
+                    <p class="text-white text-base font-normal mt-[40px]"><strong>Popular Place :</strong> Bali, Istanbul, Rome, Paris.</p>
+                </div>
+            </div>
+        </section>
+        <!-- section 1 -->
+        <section class="w-[1200px] mx-auto mt-[100px]">
+            <div data-aos="fade-down"
+             class="text-center max-w-[740px] mx-auto text-[#020202]">
+                <h2 class="text-[40px] font-semibold">
+                    Explore new worlds with exotic natural scenery                                 
+                </h2>
+                 <p class="text-sm text-[#878787] opacity-90 font-normal">Explore the world with what you love beautiful natural beauty.</p>
+            </div>
+            <div class="list-category w-full mt-[100px] grid grid-cols-3 gap-x-[21px]">
+                <div data-aos="zoom-out-right" 
+                class="category w-full h-[361px] relative rounded-t-2xl">
+                    <img src="./asset/img/category/pic1.png" alt="" class="h-full w-full object-cover rounded-t-2xl"> 
+                    <div class="content absolute bottom-0 left-0 right-0 h-[30%] p-[30px] bg-black z-2 bg-opacity-45 rounded-t-2xl flex flex-col items-start justify-end">
+                        <h3 class="text-white text-center text-lg font-semibold">Adventure</h3>
+                        <p class="text-white text-start text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+
+                <div data-aos="zoom-out-up"
+                class="category w-full h-[361px] relative rounded-t-2xl">
+                    <img src="./asset/img/category/pic2.png" alt="" class="h-full w-full object-cover rounded-t-2xl"> 
+                    <div class="content absolute bottom-0 left-0 right-0 h-[30%] p-[30px] bg-black z-2 bg-opacity-45 rounded-t-2xl flex flex-col items-start justify-end">
+                        <h3 class="text-white text-center text-lg font-semibold">Bali, Indonesia.</h3>
+                        <p class="text-white text-start text-sm">Bali is a beautiful tourist spot and is visited by many travelers. .</p>
+                    </div>
+                </div>
+
+                <div data-aos="zoom-out-left"
+                class="category w-full h-[361px] relative rounded-t-2xl">
+                    <img src="./asset/img/category/pic3.png" alt="" class="h-full w-full object-cover rounded-t-2xl"> 
+                    <div class="content absolute bottom-0 left-0 right-0 h-[30%] p-[30px] bg-black z-2 bg-opacity-45 rounded-t-2xl flex flex-col items-start justify-end">
+                        <h3 class="text-white text-center text-lg font-semibold">Adventure</h3>
+                        <p class="text-white text-start text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section 2 -->
+        <section class="reason w-full h-[633px] mt-[60px] py-[50px]">
+            <div data-aos="fade-down"
+            class="title z-10 text-center text-white">
+                <h2 class="text-[40px] font-semibold mb-[9px]">
+                    Why choose our website?                                 
+                </h2>
+                <p class="text-base font-normal">our services have been trusted by world travelers.</p>
+            </div>
+
+            <div class="list-rate w-[70%] h-auto mx-auto mt-[80px] grid grid-cols-3 gap-x-[25px] items-center">
+                <div data-aos="fade-right"
+                 class="rate w-full p-[41px] pl-[20px] bg-white rounded-md">
+                    <div class="icon max-w-[95px] p-4 bg-black rounded-lg mb-[30px]">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="66" height="65" viewBox="0 0 66 65" fill="none">
+                                <path d="M59.2072 20.1381H46.114C44.3782 20.1398 42.7141 20.8404 41.4868 22.0861C40.2594 23.3318 39.5691 25.0208 39.5674 26.7825V40.0714C39.5685 41.2459 40.0287 42.3719 40.847 43.2024C41.6652 44.0328 42.7746 44.4999 43.9318 44.5011V60.0048C43.9329 61.1793 44.3931 62.3053 45.2114 63.1357C46.0296 63.9662 47.139 64.4333 48.2962 64.4344H57.025C58.1821 64.4333 59.2916 63.9662 60.1098 63.1357C60.928 62.3053 61.3882 61.1793 61.3894 60.0048V44.5011C62.5465 44.4999 63.656 44.0328 64.4742 43.2024C65.2924 42.3719 65.7526 41.2459 65.7538 40.0714V26.7825C65.7521 25.0208 65.0618 23.3318 63.8344 22.0861C62.6071 20.8404 60.9429 20.1398 59.2072 20.1381ZM61.3894 40.0714H57.025V60.0048H48.2962V40.0714H43.9318V26.7825C43.9318 26.1951 44.1617 25.6318 44.5709 25.2164C44.9802 24.801 45.5352 24.5677 46.114 24.5677H59.2072C59.7859 24.5677 60.341 24.801 60.7502 25.2164C61.1595 25.6318 61.3894 26.1951 61.3894 26.7825V40.0714Z" fill="white"/>
+                                <path d="M43.9318 9.06397C43.9318 7.31172 44.4437 5.59883 45.4028 4.1419C46.362 2.68496 47.7252 1.54941 49.3202 0.878861C50.9152 0.208306 52.6703 0.0328589 54.3635 0.374704C56.0567 0.71655 57.612 1.56034 58.8328 2.79936C60.0535 4.03838 60.8849 5.61699 61.2217 7.33557C61.5585 9.05414 61.3856 10.8355 60.725 12.4543C60.0643 14.0732 58.9455 15.4569 57.5101 16.4304C56.0746 17.4039 54.387 17.9235 52.6606 17.9235C50.3463 17.9211 48.1274 16.987 46.4909 15.326C44.8545 13.665 43.9341 11.4129 43.9318 9.06397ZM48.2962 9.06397C48.2962 9.94009 48.5521 10.7965 49.0317 11.525C49.5113 12.2535 50.1929 12.8212 50.9904 13.1565C51.7879 13.4918 52.6654 13.5795 53.512 13.4086C54.3586 13.2377 55.1363 12.8158 55.7467 12.1963C56.3571 11.5768 56.7727 10.7875 56.9411 9.92817C57.1095 9.06888 57.0231 8.17821 56.6928 7.36878C56.3624 6.55935 55.803 5.86751 55.0853 5.38077C54.3676 4.89402 53.5238 4.63422 52.6606 4.63422C51.5034 4.63539 50.394 5.10247 49.5758 5.93296C48.7575 6.76344 48.2973 7.88948 48.2962 9.06397Z" fill="white"/>
+                                <path d="M30.8386 33.4269V26.7825C30.8368 25.0208 30.1465 23.3318 28.9192 22.0861C27.6918 20.8404 26.0277 20.1398 24.2919 20.1381H11.1987C9.463 20.1398 7.79885 20.8404 6.5715 22.0861C5.34414 23.3318 4.65386 25.0208 4.65212 26.7825V33.4269H0.28772V37.8566H35.203V33.4269H30.8386ZM9.01653 26.7825C9.01653 26.1951 9.24644 25.6318 9.65568 25.2164C10.0649 24.801 10.62 24.5677 11.1987 24.5677H24.2919C24.8707 24.5677 25.4258 24.801 25.835 25.2164C26.2442 25.6318 26.4741 26.1951 26.4741 26.7825V33.4269H9.01653V26.7825Z" fill="white"/>
+                                <path d="M9.0166 9.06397C9.0166 7.31172 9.52854 5.59883 10.4877 4.1419C11.4468 2.68496 12.8101 1.54941 14.405 0.878861C16 0.208306 17.7551 0.0328589 19.4483 0.374704C21.1416 0.71655 22.6969 1.56034 23.9176 2.79936C25.1384 4.03838 25.9697 5.61699 26.3065 7.33557C26.6433 9.05414 26.4705 10.8355 25.8098 12.4543C25.1491 14.0732 24.0303 15.4569 22.5949 16.4304C21.1594 17.4039 19.4718 17.9235 17.7454 17.9235C15.4311 17.9211 13.2122 16.987 11.5758 15.326C9.9393 13.665 9.01891 11.4129 9.0166 9.06397ZM13.381 9.06397C13.381 9.94009 13.637 10.7965 14.1165 11.525C14.5961 12.2535 15.2777 12.8212 16.0752 13.1565C16.8727 13.4918 17.7503 13.5795 18.5969 13.4086C19.4435 13.2377 20.2211 12.8158 20.8315 12.1963C21.4419 11.5768 21.8576 10.7875 22.026 9.92817C22.1944 9.06888 22.1079 8.17821 21.7776 7.36878C21.4473 6.55935 20.8879 5.86751 20.1702 5.38077C19.4524 4.89402 18.6086 4.63422 17.7454 4.63422C16.5883 4.63539 15.4788 5.10247 14.6606 5.93296C13.8424 6.76344 13.3822 7.88948 13.381 9.06397Z" fill="white"/>
+                              </svg>
+                        </span>
+                    </div>
+                    <div class="body text-black">
+                        <span class="font-semibold text-lg">Best Service</span>
+                        <p class="text-sm text-[#333] mb-[30px]">our service is reliable and convenient, our service is quality.</p>
+                    </div>
+                    <a href="" class="text-lg font-semibold">
+                        Learn more <i class="fa-solid fa-arrow-right-long ml-[10px]"></i>
+                    </a>
+                </div>
+                <div data-aos="fade-up"
+                class="rate w-full p-[41px] pl-[20px] bg-white rounded-md">
+                    <div class="icon max-w-[95px] p-4 bg-black rounded-lg mb-[30px]">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="58" height="60" viewBox="0 0 58 60" fill="none">
+                                <path d="M28.5 38.1147C23.21 38.1147 22.75 35.569 22.75 35.1546H17C17 37.8779 18.8975 42.703 25.625 43.7983V46.9952H31.375V43.7983C37.125 42.7918 40 38.9732 40 35.1546C40 31.8392 38.505 26.2741 28.5 26.2741C22.75 26.2741 22.75 24.4092 22.75 23.3139C22.75 22.2187 24.7625 20.3538 28.5 20.3538C32.2375 20.3538 32.4962 22.2483 32.525 23.3139H38.275C38.2361 21.2973 37.5317 19.3544 36.2776 17.8049C35.0235 16.2554 33.2945 15.1917 31.375 14.7887V11.4733H25.625V14.6998C19.875 15.6767 17 19.4953 17 23.3139C17 26.6293 18.495 32.1944 28.5 32.1944C34.25 32.1944 34.25 34.2073 34.25 35.1546C34.25 36.1018 32.4675 38.1147 28.5 38.1147Z" fill="#F8F8F8"/>
+                                <path d="M8.7 0.30896H0V6.19548H5.8V56.2309C5.8 57.0115 6.10554 57.7602 6.64939 58.3121C7.19325 58.8641 7.93087 59.1742 8.7 59.1742H49.3C50.0691 59.1742 50.8068 58.8641 51.3506 58.3121C51.8945 57.7602 52.2 57.0115 52.2 56.2309V6.19548H58V0.30896H8.7ZM46.4 53.2877H11.6V6.19548H46.4V53.2877Z" fill="#F8F8F8"/>
+                              </svg>
+                        </span>
+                    </div>
+                    <div class="body text-black">
+                        <span class="font-semibold text-lg">Price Guarantee</span>
+                        <p class="text-sm text-[#333] mb-[30px]">our service is reliable and convenient, our service is quality.</p>
+                    </div>
+                    <a href="" class="text-lg font-semibold">
+                        Learn more <i class="fa-solid fa-arrow-right-long ml-[10px]"></i>
+                    </a>
+                </div>
+                <div  data-aos="fade-left"
+                class="rate w-full p-[41px] pl-[20px] bg-white rounded-md">
+                    <div class="icon max-w-[95px] rounded-lg mb-[30px]">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="96" height="98" viewBox="0 0 96 98" fill="none">
+                                <rect y="0.026001" width="95.5654" height="96.9954" rx="10" fill="black"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M66.6547 18.1549H29.0156V22.602H15.9286V43.4615C15.9286 51.5233 24.7634 58.1572 33.4331 58.8474C36.2792 61.953 41.2853 64.2089 45.7408 65.1708V70.6229C41.4801 71.9558 33.8693 75.0873 33.4331 78.4992H62.6735C62.2331 75.0873 53.8472 71.9515 49.578 70.6229V65.1708C54.0505 64.2089 59.2811 61.953 62.1314 58.8474C70.7968 58.1572 79.242 51.5233 79.242 43.4615V22.602H66.6547V18.1549ZM19.9479 26.5531H28.7107V44.5226C28.7107 48.0682 29.6086 51.4413 31.1884 54.4779C24.6321 52.3514 19.9479 46.8734 19.9479 40.4637V26.5531ZM54.2707 48.4694L47.7314 44.7987L41.1836 48.4694L42.4331 40.7053L37.1389 35.21L44.4533 34.0756L47.7314 27.0189L51.0011 34.0756L58.3154 35.21L53.0213 40.7053L54.2707 48.4694ZM63.9907 55.0516C65.5789 51.877 66.4895 48.3659 66.4895 44.652V26.6695H75.2735V40.412C75.2735 47.1107 70.5681 52.8302 63.9907 55.0516Z" fill="#F8F8F8"/>
+                              </svg>
+                        </span>
+                    </div>
+                    <div class="body text-black">
+                        <span class="font-semibold text-lg">Handpicked</span>
+                        <p class="text-sm text-[#333] mb-[30px]">our service is reliable and convenient, our service is quality.</p>
+                    </div>
+                    <a href="" class="text-lg font-semibold">
+                        Learn more <i class="fa-solid fa-arrow-right-long ml-[10px]"></i>
+                    </a>
+                </div>
+                
+               
+            </div>
+          
+               
+                
+               
+           
+           
+            
+           
+            
+
+        </section>
+        <!-- section 33 -->
+        <section class="brands w-full mb-[133px133px]">
+            <div class="w-[1200px] mx-auto mt-[100px]">
+                <div data-aos="zoom-out-up"
+                 class="title-heading text-center max-w-[630px] mx-auto">
+                    <h3 class="text-[#020202] text-[61px] font-semibold">
+                        Our tour partner
+                    </h3>
+                    <p class=" text-base text-[#ccc]">
+                        There are many variation of passage of lorem ipsum available but the majority have suffered alteration 
+                    </p>
+                </div>
+                <div class="list-brand flex items-center justify-between mt-[20px]">
+                    <div data-aos="fade-down" class="brand"><img src="./asset/img/icon/bigui.svg" alt=""></div>
+                    <div data-aos="fade-down"  class="brand"><img src="./asset/img/icon/Booking.com.svg" alt=""></div>
+                    <div data-aos="fade-down"  class="brand"><img src="./asset/img/icon/Jakmaen.svg" alt=""></div>
+                    <div data-aos="fade-down"  class="brand"><img src="./asset/img/icon/Katana (2).svg" alt=""></div>
+                    <div data-aos="fade-down"  class="brand"><img src="./asset/img/icon/travava.svg" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <section class="Evaluate w-full">
+            <div class="w-[90%] mx-auto mt-[150px]">
+                <div data-aos="fade-right"
+                 class="mb-[60px]">
+                    <span class="text-[30px] text-[#626262] font-medium">TESTIMONIAL</span>
+                    <h3 class="text-[50px] text-[#020202] font-semibold mb-[15px]">What our client say</h3>
+                    <p class="text-[#626262] text-lg">Create  a visual identity for your company and a <br> overall brand</p>
+                </div>
+                <div class="list-user grid grid-cols-5 gap-x-[21px]">
+                    <div data-aos="fade-right"
+                     class="user rounded-lg">
+                        <div class="img mb-[20px]">
+                            <img class="rounded-full"
+                            src="./asset/img/icon/unsplash_DItYlc26zVI.png" alt="">
+                        </div>
+                        <div class="infor flex flex-col items-center mb-[15px]">
+                            <span class="text-[22px] font-semibold">Cristian Daniel</span>
+                            <span class="text-base font-medium">Leader</span>
+                        </div>
+                        <div class="rate-user">
+                            <div class="star text-yellow-500 mb-[11px]">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-lg font-normal">Before we define any approach, we need to deline the brands overall goal. We  then need to dive.</p>
+                    </div>
+                </div>
+
+                <div data-aos="fade-down"
+                 class="user rounded-lg">
+                    <div class="img mb-[20px]">
+                        <img class="rounded-full"
+                        src="./asset/img/icon/unsplash_IF9TK5Uy-KI.png" alt="">
+                    </div>
+                    <div class="infor flex flex-col items-center mb-[15px]">
+                        <span class="text-[22px] font-semibold">Cristian Daniel</span>
+                        <span class="text-base font-medium">Leader</span>
+                    </div>
+                    <div class="rate-user">
+                        <div class="star text-yellow-500 mb-[11px]">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-lg font-normal">Before we define any approach, we need to deline the brands overall goal. We  then need to dive.</p>
+                </div>
+            </div>
+
+            <div data-aos="fade-up"
+             class="user rounded-lg">
+                <div class="img mb-[20px]">
+                    <img class="rounded-full"
+                    src="./asset/img/icon/unsplash_DItYlc26zVI.png" alt="">
+                </div>
+                <div class="infor flex flex-col items-center mb-[15px]">
+                    <span class="text-[22px] font-semibold">Cristian Daniel</span>
+                    <span class="text-base font-medium">Leader</span>
+                </div>
+                <div class="rate-user">
+                    <div class="star text-yellow-500 mb-[11px]">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-lg font-normal">Before we define any approach, we need to deline the brands overall goal. We  then need to dive.</p>
+            </div>
+        </div>
+
+        <div data-aos="fade-down"
+         class="user rounded-lg">
+            <div class="img mb-[20px]">
+                <img class="rounded-full"
+                src="./asset/img/icon/unsplash_DItYlc26zVI.png" alt="">
+            </div>
+            <div class="infor flex flex-col items-center mb-[15px]">
+                <span class="text-[22px] font-semibold">Cristian Daniel</span>
+                <span class="text-base font-medium">Leader</span>
+            </div>
+            <div class="rate-user">
+                <div class="star text-yellow-500 mb-[11px]">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-lg font-normal">Before we define any approach, we need to deline the brands overall goal. We  then need to dive.</p>
+        </div>
+    </div>
+
+    <div data-aos="fade-left"
+    class="user rounded-lg">
+        <div class="img mb-[20px]">
+            <img class="rounded-full"
+            src="./asset/img/icon/unsplash_DItYlc26zVI.png" alt="">
+        </div>
+        <div class="infor flex flex-col items-center mb-[15px]">
+            <span class="text-[22px] font-semibold">Cristian Daniel</span>
+            <span class="text-base font-medium">Leader</span>
+        </div>
+        <div class="rate-user">
+            <div class="star text-yellow-500 mb-[11px]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="text-lg font-normal">Before we define any approach, we need to deline the brands overall goal. We  then need to dive.</p>
+    </div>
+</div>
+            </div>
+        </section>
+
+        <footer class="footer mt-[100px] w-full">
+            <div class="top py-[40px]  px-[100px] flex items-start justify-between gap-[30px] bg-black">
+                <div class="text-white flex flex-col items-start justify-center">
+                    <img src="./asset/img/logo/logo.png" alt="logo" class="ml-[-10px]">
+                    <p clas="text-sm">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Quisque pharetra condimentum.</p>
+                </div>
+                <div class="contact text-white">
+                    <ul class="flex flex-col gap-[10px]">
+                        <strong>Contact Information</strong>
+                        <li><span><strong>Number Phone : </strong>123 678 123</span></li>
+                        <li><span><strong>Hotline : </strong>+97 888 8888</span></li>
+                        <li><span><strong>Email :  </strong>info@traveller.com</span></li>
+                     
+                    </ul>
+                </div>
+                <div class="link text-white">
+                    <ul class="flex flex-col gap-[10px]">
+                        <strong>Quick Link</strong>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./pakage.html">Pakage</a></li>
+                        <li><a href="./singleBlog.html">Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="follow text-white">
+                    <strong>Follow us :</strong>
+                    <ul class="flex gap-[13px]">
+                        <li><span><i class="fa-brands fa-facebook"></i></span></li>
+                        <li><span><i class="fa-brands fa-facebook-messenger"></i></span></li>
+                        <li><span><i class="fa-brands fa-youtube"></i></span></li>
+                        <li><span><i class="fa-brands fa-github"></i></span></li>
+                    </ul>
+                </div>
+           </div>
+            <div class="bottom py-[10px] text-black text-center border-b-2 border-black">
+                <p>Copyright © All rights reserved (Website Developed & Managed by creativechroma)</p>
+            </div>
+        </footer>
+
+
+    </div>
+    
+    <!-- js -->
+        <script src="./js/main.js">
+        </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    <!-- end js -->
+
+</body>
+</html>

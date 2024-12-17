@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traveling Project</title>
+  <link rel="icon" type="image/x-icon" href="./asset/img/icon/airplane.png">
+  <link href="./css/output.css" rel="stylesheet">
+  <link href="./css/about.css" rel="stylesheet">
+  <link href="./css/common.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     <div class="wrapper max-w-screen">
+
+        <header
+        data-aos="fade-down"
+         class="header-fixed px-[52px] py-[10px] bg-black bg-opacity-20 fixed top-0 right-0 left-0 z-[100]">
+            <div class="flex items-center justify-between relative">
+                <div class="logo">
+                    <img src="./asset/img/logo/logo.png" alt="logo-img" class="logo-image" loading="lazy">
+                </div>
+                <nav class="text-white text-base uppercase font-medium">
+                    <ul class="menu flex gap-[34px]">
+                        <li class="menu-items"><a href="">Home</a></li>
+                        <li class="menu-items"><a href="">Package</a></li>
+                        <li class="menu-items"><a href="">Destination</a></li>
+                        <li class="menu-items"><a href="">Blog</a></li> 
+                        <li class="menu-items"><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="action text-white text-lg flex gap-[30px]">
+                    <span class="search-icon cursor-pointer">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    <span class="noti-icon cursor-pointer">
+                        <i class="fa-solid fa-bell"></i>
+                    </span>
+                </div>
+
+                <div class="search-area absolute top-[100%] left-[70%] w-[400px]  py-[50px] px-[20px] bg-white rounded-lg border-[1px] border-[#ccc] z-[2] hidden">
+                    <input type="text" placeholder="Search Destination" class="search-input py-[10px] pl-[13px] w-[100%] relative rounded-full border-[1px] border-[#eee]">
+                    <button class="search-btn absolute top-[40%] right-[10%] text-lg">
+                        <i class="fa-brands fa-searchengin"></i>
+                    </button>
+                </div>
+
+                <div class="noti-area absolute top-[100%] left-[85%] w-[250px] h-auto bg-white border-[1px] border-[#eee] z-[2] rounded-md hidden">
+                    <ul class="w-full flex flex-col text-center">
+                        <li class="py-[15px] border-b-[1px] flex px-[10px] gap-[13px]">
+                            <img src="./asset/img/icon/hacker.png" alt="" class="">
+                            <span>Lorem ipsum dolor sit</span>
+                        </li>
+                        <li class="py-[15px] border-b-[1px] flex px-[10px] gap-[13px]">
+                            <img src="./asset/img/icon/man.png" alt="" class="">
+                            <span>Lorem ipsum dolor sit</span></li>
+                        <li class="py-[15px] border-b-[1px] flex px-[10px] gap-[13px]">
+                            <img src="./asset/img/icon/woman.png" alt="" class="">
+                            <span>Lorem ipsum dolor sit</span></li>
+                        <li class="py-[15px] border-b-[1px] flex px-[10px] gap-[13px]">
+                            <img src="./asset/img/icon/user.png" alt="" class="">
+                            <span>Lorem ipsum dolor sit</span></li>
+                    </ul>
+                </div>
+    
+                <div class="toggle hidden text-lg ">
+                    <i class="fa-solid fa-list"></i>
+                </div>
+            </div>
+        </header>
+
+        <section class="hero max-w-[100vw] min-h-[100vh]">
+            <div class="absolute top-0 bottom-0 left-0 right-0 bg-black bg-opacity-20 z-[1]">
+                <div 
+                data-aos="fade-right"
+                data-aos-duration="2000"
+                class="title max-w-[736px] mt-[150px] ml-[100px]">
+                    <h2 class="title text-white text-[70px] font-bold mb-[23px]">Make in your journey.</h2>
+                    <p class="dec text-lg text-white opacity-85">Explore the world with what you love beautiful natural beauty Lorem ipsum dolor sit amet consectetur adipisicing elit. Error temporibus consectetur magnam, facere quis natus dolorum expedita sapiente perferendis..</p>
+                    <div class="action mt-[50px] p-[10px] bg-white rounded-full flex items-center justify-between">
+                        <div class="text-[#9B9B9B] pl-[13px] ">
+                            <a href="">Location</a>
+                            <span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </span>
+                        </div>
+                        <div class="text-[#9B9B9B] pl-[13px] ">
+                            <a href="">Date</a>
+                            <span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </span>
+                        </div>
+                        <div class="text-[#9B9B9B] pl-[13px] ">
+                            <a href="">People</a>
+                            <span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </span>
+                        </div>
+                        <a href="" class="text-white font-medium cursor-pointer py-[11px] px-[25px] bg-black rounded-full">
+                            Explore now
+                        </a>
+                    </div>
+                    <p class="text-white text-base font-normal mt-[40px]"><strong>Popular Place :</strong> Bali, Istanbul, Rome, Paris.</p>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            const searchIcon  = document.querySelector(".search-icon");
+            const searchArea = document.querySelector(".search-area");
+            searchIcon.addEventListener("click", () => {
+                searchArea.classList.toggle("hidden");
+            })
+            const notiIcon  = document.querySelector(".noti-icon");
+            const notiArea = document.querySelector(".noti-area");
+            notiIcon.addEventListener("click", () => {
+                notiArea.classList.toggle("hidden");
+            })
+        </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
+
+     </div>
+</body>
+</html>

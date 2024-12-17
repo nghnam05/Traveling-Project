@@ -1,0 +1,57 @@
+
+.category{
+    transition: transform 0.3s ease;
+}
+.category:hover {
+    cursor: zoom-in;
+    transform: scale(0.96) !important;
+    background-color : transparent;
+}
+
+
+.content {
+    visibility: hidden;
+    transition: all .3s;
+    cursor: pointer;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.category:hover .content {
+    visibility:visible ;
+}
+
+
+.rate {
+    transition: all .3s ease;
+}
+
+.rate:hover {
+        cursor: pointer;
+        transform: scale(0.96) !important;
+}
+
+
+.brand {
+    transition: all 0.5s ease;
+}
+
+.brand:hover {
+    cursor: pointer;
+    transform: scale(1.05) !important;
+    filter: drop-shadow(2px 2px 3px #333333);
+}
+
+.user {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    padding: 20px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.user:hover {
+    cursor: pointer;
+    transform: scale(0.95) !important;
+}
